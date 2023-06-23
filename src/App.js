@@ -19,6 +19,7 @@ function App() {
         </a>
       </header>
     </div>
+    <div>Page d'accueil</div>
   );
 }
 
