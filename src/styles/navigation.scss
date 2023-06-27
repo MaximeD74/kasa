@@ -1,0 +1,18 @@
+@import '../styles/mixins/colors';
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 57px;
+    width: 309px;
+    font-size: 24px;
+    
+        a {
+            color: $primary-color;
+            text-decoration: none;
+            text-align: right;
+                &:hover {
+                    text-decoration: underline;
+                }
+        }
+}

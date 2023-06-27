@@ -1,15 +1,23 @@
-import KasaIcon from "../../assets/icons/KasaIcon.svg"
-import K from "../../assets/vectors/K.svg"
-import A from "../../assets/vectors/A.svg"
-import S from "../../assets/vectors/S.svg"
+import Header from "../../components/Header"
+import Banner from "../../components/Banner"
+import '../../styles/home.scss'
+import Card from "../../components/Card"
 
 function Home () {
     return (
         <div>
-            <img src={K} alt="K" />
-            <img src={KasaIcon} alt="Kasa Icon" />
-            <img src={S} alt="S" />
-            <img src={A} alt="A" />
+            <Header />
+            <Banner />
+            <div className="location-grid">
+                <div className="cards">
+                    <div className="card-container"><Card /></div>
+                    <div className="card-container"><Card /></div>
+                    <div className="card-container"><Card /></div>
+                    <div className="card-container"><Card /></div>
+                    <div className="card-container"><Card /></div>
+                    <div className="card-container"><Card /></div>
+                </div>
+            </div>
         </div>
     )
 }

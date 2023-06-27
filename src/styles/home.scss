@@ -1,0 +1,18 @@
+.location-grid {
+    height: 829px;
+    border-radius: 25px;
+    background: #F6F6F6;
+    display: flex;
+    flex-wrap: wrap;
+    .cards {
+        display: flex;
+        width: 100%;
+        margin: 50px;
+        gap: 60px;
+        flex-wrap: wrap;
+    }
+        .card-container {
+            min-width: 30%;
+            max-width: 33.33%;
+        }
+}

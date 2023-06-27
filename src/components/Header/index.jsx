@@ -1,12 +1,15 @@
-import { Link } from 'react-router-dom'
+import React from 'react';
+import Navigation from '../Navigation';
+import Title from '../Title';
+import "../../styles/header.scss"
 
 function Header() {
   return (
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-    </nav>
-  )
+    <header className='header'>
+      <Title />   
+      <Navigation /> 
+    </header>
+  );
 }
 
-export default Header
+export default Header;

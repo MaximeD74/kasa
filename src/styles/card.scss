@@ -1,0 +1,16 @@
+@import '../styles/mixins/colors';
+
+.card {
+    height: 340px;
+    border-radius: 10px;
+    color: #FFF;
+    background: $primary-color;
+    display: flex;
+    align-items: flex-end;
+        h2 {
+            margin: 20px;
+            font-size: 18px;
+            font-family: Montserrat;
+            font-weight: 500;
+        }
+}
