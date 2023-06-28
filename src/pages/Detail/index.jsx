@@ -1,3 +1,5 @@
+
+
 function Detail() {
     return (
       <div>

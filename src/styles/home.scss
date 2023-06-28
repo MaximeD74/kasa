@@ -1,18 +1,27 @@
+@import '../styles/mixins/colors';
+
 .location-grid {
     height: 829px;
     border-radius: 25px;
-    background: #F6F6F6;
+    background: $background-color;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 50px;
     .cards {
         display: flex;
         width: 100%;
         margin: 50px;
-        gap: 60px;
+        gap: 30px;
         flex-wrap: wrap;
     }
         .card-container {
-            min-width: 30%;
-            max-width: 33.33%;
+            width: calc(33.33% - 20px);
         }
+        
+}
+
+@media (min-width: 992px) {
+    .card-container {
+      width: calc(33.33% - 30px); /* Divisez par trois la largeur pour obtenir trois colonnes de cartes */
+    }
 }

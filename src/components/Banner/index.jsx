@@ -1,11 +1,10 @@
-import landscapeHome from '../../assets/pictures/landscape-home.png'
 import '../../styles/banner.scss'
 
-function Banner () {
+function Banner ({image, text}) {
     return (
         <div className='banner'>
-            <p>Chez vous, partout et ailleurs</p>
-            <img src={landscapeHome} alt="landscape"/>
+            <img src={image} alt="banner"/>
+            {text && <p>{text}</p>}
             <div className='banner-shadow'>
             </div>
         </div>

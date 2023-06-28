@@ -1,9 +1,10 @@
 import '../../styles/card.scss'
 
-function Card() {
+function Card({ title, cover}) {
     return (
         <div className="card">
-            <h2 className="card-title">Titre de la location</h2>
+            <img className='card-image' src= {cover} alt={title} />
+            <h3>{title}</h3>
         </div>
     )
 }
