@@ -4,8 +4,8 @@ import "../../styles/navigation.scss"
 function Navigation() {
   return (
     <nav className='nav'>
-      <Link to="/" className='link'>Accueil</Link>
-      <Link to="/about" className='link'>A propos</Link>
+      <Link to="/">Accueil</Link>
+      <Link to="/about">A propos</Link>
     </nav>
   )
 }

@@ -1,0 +1,28 @@
+@import '../styles/mixins/colors';
+
+.error-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $primary-color;
+    font-family: 'Montserrat';
+    
+    h1 {
+        font-size: 288px;
+        margin: 89px 0 139px 0;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 36px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    a {
+        color: $primary-color;
+        font-weight: 500;
+        font-size: 18px;
+        margin: 139px 0 139px 0;
+    }
+}

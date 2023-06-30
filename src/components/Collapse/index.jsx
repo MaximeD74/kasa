@@ -5,16 +5,16 @@ import arrowUp from "../../assets/arrows/arrowUp.svg"
 function Collapse({ title, description }) {
     const [isOpen, setIsOpen] = useState(false);
   
-    const handleToggle = () => {
+    const clickOnArrow = () => {
       setIsOpen(!isOpen);
     };
   
     return (
       <div className={`collapse ${isOpen ? "open" : ""}`}>
-        <div className="headband" onClick={handleToggle}>
+        <div className="headband">
           <div className="title">{title}</div>
           <div className={`arrow ${isOpen ? "rotate" : ""}`}>
-            <img src={arrowUp} alt="Flèche vers le haut" />
+            <img src={arrowUp} alt="Flèche vers le haut"  onClick={clickOnArrow} />
           </div>
         </div>
         <div className={`description ${isOpen ? "open" : ""}`}>
