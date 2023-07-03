@@ -21,7 +21,7 @@ function Home () {
                 <div className="cards">
                     {data.slice(0, 6).map((item) => (
                         <div className="card-container" key={item.id}>
-                            <Card title={item.title} cover={item.cover} />
+                            <Card title={item.title} cover={item.cover} id={item.id}/>
                         </div>
                     ))}
                 </div>

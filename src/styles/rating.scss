@@ -1,0 +1,17 @@
+.rating {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    i {
+      font-size: 25px;
+      margin-right: 15px; 
+
+    }
+    .empty {
+      color: lightgray;
+    }
+
+  }
+  
+  

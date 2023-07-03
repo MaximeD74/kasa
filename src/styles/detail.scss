@@ -1,0 +1,58 @@
+body {
+    color: #FF6060;
+    font-family: Montserrat;
+    font-weight: 500;
+
+    .locationHost {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+
+        .locationTitle {
+            display: flex;
+            flex-direction: column;
+    
+            h1 {
+                font-size: 36px;
+                margin-bottom: 0;
+                
+            }
+        
+            .location {
+                margin-top: 0;
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+        }
+
+        .host {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            
+            p {
+                font-size: 18px;
+                
+            }
+
+            .hostPic {
+                border-radius: 90px;
+                width: 64px;
+                height: 64px;
+            }
+        }
+    }
+
+    .tagRating {
+        display: flex;
+        justify-content: space-between;
+
+        .tags {
+            display: flex;
+            gap: 30px;
+        }
+    }
+
+
+}
