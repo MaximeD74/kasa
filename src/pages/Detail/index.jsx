@@ -60,8 +60,7 @@ function Detail() {
               <Collapse key={index} title={item.title} description={item.description} />
             ))}
           </div>
-
-      <Footer />
+          <Footer extraClassName="margin-top-detail" />
     </div>
   );
 }

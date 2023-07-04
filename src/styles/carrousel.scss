@@ -26,10 +26,20 @@
 
     .leftArrow {
         left: 24px;
+
+        @media (max-width: 900px) {
+            width: 24px;
+            height: 24px;
+        }
     }
 
     .rightArrow {
         right: 24px;
+
+        @media (max-width: 900px) {
+            width: 24px;
+            height: 24px;
+        }
     }
 
     .counter {
