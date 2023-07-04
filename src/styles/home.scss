@@ -1,27 +1,37 @@
 @import '../styles/mixins/colors';
 
 .location-grid {
-    height: 829px;
+    
     border-radius: 25px;
     background: $background-color;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 50px;
+
+    @media (max-width: 900px) {
+      border-radius: 0;
+      margin-bottom: 27px;
+      background: #FFF;
+    }
     .cards {
         display: flex;
         width: 100%;
         margin: 50px;
         gap: 30px;
         flex-wrap: wrap;
+
+        @media (max-width: 900px) {
+            flex-direction: column;
+            margin: 0;
+        }
     }
         .card-container {
             width: calc(33.33% - 20px);
+
+            @media (max-width: 900px) {
+                width: 100%;
+            }
         }
         
 }
 
-@media (min-width: 992px) {
-    .card-container {
-      width: calc(33.33% - 30px); /* Divisez par trois la largeur pour obtenir trois colonnes de cartes */
-    }
-}

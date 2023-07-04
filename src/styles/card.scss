@@ -5,6 +5,10 @@
     height: 340px;
     position: relative;
     overflow: hidden;
+
+    @media (max-width: 900px) {
+      height: 225px;
+    }
     
     .card-image {
       width: 100%;

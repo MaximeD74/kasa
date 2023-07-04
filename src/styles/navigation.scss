@@ -6,6 +6,10 @@
     gap: 57px;
     width: 309px;
     font-size: 24px;
+
+    @media (max-width: 700px) {
+        gap: 26px;
+    }
     
         a {
             color: $primary-color;
@@ -17,4 +21,11 @@
                     text-decoration: underline;
                 }
         }
+
+        @media (max-width: 700px) {
+            a {
+              font-size: 12px;
+              text-transform: uppercase;
+            }
+          }
 }

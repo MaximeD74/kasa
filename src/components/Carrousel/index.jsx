@@ -35,6 +35,7 @@ function Carrousel() {
       />
       <img src={arrowLeft} alt="Left arrow" onClick={prevPicture} className="arrow leftArrow" />
       <img src={arrowRight} alt="Right arrow" onClick={nextPicture} className="arrow rightArrow" />
+      <div className="counter">{`${currentIndex + 1}/${pictures.length}`}</div>
     </div>
   );
 }

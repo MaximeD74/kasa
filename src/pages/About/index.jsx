@@ -1,6 +1,6 @@
 import Header from "../../components/Header"
 import Banner from "../../components/Banner"
-import '../../styles/home.scss'
+import '../../styles/about.scss'
 import landscapeAbout from "../../assets/pictures/landscape-about.png"
 import Collapse from "../../components/Collapse"
 import Footer from "../../components/Footer/index"

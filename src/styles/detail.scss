@@ -5,52 +5,130 @@ body {
 
     .locationHost {
         display: flex;
+        margin-bottom: 24px;
         justify-content: space-between;
-        align-items: center;
-        
 
-        .locationTitle {
+        @media (max-width: 900px) {
+            flex-direction: column;
+        }
+        
+        .locationTag {
             display: flex;
             flex-direction: column;
-    
-            h1 {
-                font-size: 36px;
-                margin-bottom: 0;
-                
-            }
-        
-            .location {
-                margin-top: 0;
-                font-size: 18px;
-                margin-bottom: 30px;
-            }
-        }
-
-        .host {
-            display: flex;
-            align-items: center;
-            gap: 10px;
             
-            p {
-                font-size: 18px;
-                
-            }
+            .locationTitle {
+                h1 {
+                    font-size: 36px;
+                    margin-bottom: 0;
+                    margin-top: 0;
 
-            .hostPic {
-                border-radius: 90px;
-                width: 64px;
-                height: 64px;
+                    @media (max-width: 900px) {
+                        font-size: 18px;
+                    }
+                }
+
+                .location {
+                    margin-top: 0;
+                    font-size: 18px;
+                    margin-bottom: 20px;
+
+                    @media (max-width: 900px) {
+                        margin-bottom: 10px;
+                        font-size: 14px;
+                    }
+                }
+            }
+    
+            .tags {
+                display: flex;
+                gap: 10px;
+            }
+    
+        }
+        .hostRating {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            @media (max-width: 900px) {
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+               
+            }
+            .host {
+                display: flex;
+                width: 100%;
+                text-align: right;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 10px;
+
+                @media (max-width: 900px) {
+                    min-width: 20%;
+                    max-width: 25%;
+                    font-size: 12px;
+                }
+            
+                .hostName {
+                    width: 50%;
+                }
+                
+                .hostPic {
+                    border-radius: 90px;
+                    width: 64px;
+                    height: 64px; 
+
+                    @media (max-width: 900px) {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+
+                .ratings {
+                    bottom: 0;
+                }
             }
         }
     }
 
-    .tagRating {
+    .collapseContainer {
         display: flex;
-        justify-content: space-between;
+        position: relative;
+        width: 100%;
+        gap: 5%;
 
-        .tags {
-            display: flex;
-            gap: 30px;
+        @media (max-width: 900px) {
+            flex-direction: column;
+          }
+
+        .collapse {
+            width: 100%;
+
+            .headband {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .description {
+                width: 100%;
+                margin-left: 0;
+                margin-bottom: 50px;
+                font-weight: 400;
+
+                @media (max-width: 900px) {
+                    margin-bottom: 27px;
+                  }
+                
+                .equipementText {
+                    padding: 0;
+                    margin: 2px 0;
+
+                    @media (max-width: 900px) {
+                        margin: 0;
+                      }
+                }
+            }
         }
     }
 

@@ -19,7 +19,7 @@ function Home () {
             <Banner image={landscapeHome} text="Chez vous, partout et ailleurs" />
             <div className="location-grid">
                 <div className="cards">
-                    {data.slice(0, 6).map((item) => (
+                    {data.map((item) => (
                         <div className="card-container" key={item.id}>
                             <Card title={item.title} cover={item.cover} id={item.id}/>
                         </div>

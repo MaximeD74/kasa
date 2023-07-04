@@ -3,4 +3,11 @@
     justify-content: space-between;
     align-items: center;
     margin: 45px 0px 50px 0px;
+
+    @media (max-width: 900px) {
+      margin-bottom: 27px;
+      margin-top: 20px;
+    }
   }
+
+  
