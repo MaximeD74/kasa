@@ -7,10 +7,14 @@
     width: 309px;
     font-size: 24px;
 
-    @media (max-width: 700px) {
+    @media (max-width: 900px) {
         gap: 26px;
     }
     
+    @media (max-width: 350px) {
+        gap: 20px;
+    }
+
         a {
             color: $primary-color;
             font-size: 24px;
@@ -22,10 +26,17 @@
                 }
         }
 
-        @media (max-width: 700px) {
+        @media (max-width: 900px) {
             a {
               font-size: 12px;
               text-transform: uppercase;
             }
           }
+
+        @media (max-width: 350px) {
+            a {
+              font-size: 10px;
+              text-transform: uppercase;
+            }
+          } 
 }

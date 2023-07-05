@@ -84,21 +84,21 @@
       transition: max-height 0.5s ease;
     }
   
-    p {
+    .descriptionText {
       color: #ff6060;
-      padding: 20px;
       font-size: 18px;
       font-family: Montserrat;
       transition: transform 0.5s ease;
       transform: translateY(-100%);
+      margin: 35px 15px 15px 15px;
   
       @media (max-width: 900px) {
         font-size: 12px;   
-        padding: 15px;
+        margin: 20px 15px 15px 15px;
       }
     }
   
-    &.open p {
+    &.open .descriptionText {
       transform: translateY(0);
       transition: transform 0.5s ease;
     }

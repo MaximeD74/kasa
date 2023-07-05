@@ -18,7 +18,7 @@ function Collapse({ title, description }) {
           </div>
         </div>
         <div className={`description ${isOpen ? "open" : ""}`}>
-          <p>{description}</p>
+          <div className="descriptionText">{description}</div>
         </div>
       </div>
     );

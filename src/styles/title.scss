@@ -2,18 +2,29 @@
     display: flex;
     gap: 10px;
 
-    @media (max-width: 700px) {
+    @media (max-width: 900px) {
       gap: 5px;
+    }
+
+    @media (max-width: 350px) {
+        gap: 3px;
     }
         img {
             width: 54.33px;
             height: 62.256px;
         }
 
-        @media (max-width: 700px) {
+        @media (max-width: 900px) {
             img {
                 height: 47px;
                 width: 30px;
+            }
+        }
+
+        @media (max-width: 350px) {
+            img {
+                height: 35px;
+                width: 21px;
             }
         }
 }

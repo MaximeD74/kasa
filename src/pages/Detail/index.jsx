@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import Header from "../../components/Header";
 import Carrousel from "../../components/Carrousel";
 import jsonData from "../../datas/data.json";
@@ -12,6 +12,11 @@ import React from "react";
 function Detail() {
   const { id } = useParams();
   const selectedData = jsonData.find((item) => item.id === id);
+
+  if (!selectedData) {
+    return <Navigate to="/error" />
+  }
+
   const { title, location, host, tags, rating, description, equipments } = selectedData;
   const hostName = host.name;
   const hostPic = host.picture;
