@@ -1,7 +1,7 @@
-import Header from "../../components/Header"
+import Header from "../../../components/Header"
 import { Link } from 'react-router-dom'
-import "../../styles/error.scss"
-import Footer from "../../components/Footer/index"
+import "../../../styles/error.scss"
+import Footer from "../../../components/Footer/index"
 
 function Error() {
     return (

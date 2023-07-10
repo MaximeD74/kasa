@@ -1,11 +1,11 @@
-import Header from "../../components/Header"
-import Banner from "../../components/Banner"
-import '../../styles/home.scss'
-import Card from "../../components/Card"
-import landscapeHome from "../../assets/pictures/landscape-home.png"
-import jsonData from '../../datas/data.json';
+import Header from "../../../components/Header"
+import Banner from "../../../components/Banner"
+import '../../../styles/home.scss'
+import Card from "../../../components/Card"
+import landscapeHome from "../../../assets/pictures/landscape-home.png"
+import jsonData from '../../../datas/data.json';
 import { useState, useEffect } from "react"
-import Footer from "../../components/Footer/index"
+import Footer from "../../../components/Footer/index"
 
 function Home () {
     const [data, setData] = useState([]);

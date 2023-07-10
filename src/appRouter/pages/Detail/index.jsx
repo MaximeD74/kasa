@@ -1,12 +1,12 @@
 import { useParams, Navigate } from "react-router-dom";
-import Header from "../../components/Header";
-import Carrousel from "../../components/Carrousel";
-import jsonData from "../../datas/data.json";
-import '../../styles/detail.scss'
-import Tag from "../../components/Tag";
-import Rating from "../../components/Rating";
-import Footer from "../../components/Footer/index"
-import Collapse from "../../components/Collapse/index"
+import Header from "../../../components/Header";
+import Carrousel from "../../../components/Carrousel";
+import jsonData from "../../../datas/data.json";
+import '../../../styles/detail.scss'
+import Tag from "../../../components/Tag";
+import Rating from "../../../components/Rating";
+import Footer from "../../../components/Footer/index"
+import Collapse from "../../../components/Collapse/index"
 import React from "react";
 
 function Detail() {
