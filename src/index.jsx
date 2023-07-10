@@ -2,25 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Home from './pages/Home';
-import About from './pages/About';
-import Error from './pages/Error';
-import Detail from './pages/Detail';
+import AppRouter from './appRouter';
 import './styles/mixins/_colors.scss'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<Error />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/detail/:id" element={<Detail />} />
-      </Routes>
-    </Router>
+    <AppRouter />
   </React.StrictMode>
 );
 
