@@ -19,13 +19,21 @@ function Carrousel() {
   }, [id]);
 
   const prevPicture = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? pictures.length - 1 : prevIndex - 1));
+    setCurrentIndex((currentIndex) => (currentIndex === 0 ? pictures.length - 1 : currentIndex - 1));
   };
 
   const nextPicture = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === pictures.length - 1 ? 0 : prevIndex + 1));
+    setCurrentIndex((currentIndex) => (currentIndex === pictures.length - 1 ? 0 : currentIndex + 1));
   };
 
+  if (pictures.length === 1) {
+    return (
+      <div className="carrousel">
+        <img src={pictures[currentIndex]} alt={id} className="carrouselPicture" />
+      </div>
+    );
+  }
+  
   return (
     <div className="carrousel">
       <img

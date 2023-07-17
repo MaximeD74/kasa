@@ -60,12 +60,12 @@ function Detail() {
               </div>
             </div>
       </div>
-          <div className="collapseContainer">
+      <div className="collapseContainer">
             {data.map((item, index) => (
               <Collapse key={index} title={item.title} description={item.description} />
             ))}
-          </div>
-          <Footer extraClassName="margin-top-detail" />
+      </div>
+      <Footer extraClassName="margin-top-detail" />
     </div>
   );
 }
